@@ -135,9 +135,6 @@ int main() {
     return 0;
 }
 
-
-
-
 OUTPUT:
 
 1. Add Item
@@ -169,7 +166,6 @@ ID: 12345, Name: BAT, Quantity: 60, Reorder Level: 2
 
 Enter your choice: 4
 Exiting.
-
 
 
 
