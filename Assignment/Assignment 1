@@ -132,5 +132,73 @@ public:
 int main() {
     InventoryManagementSystem ims;
     ims.menu();
-    return 0;
+    return 0;
 }
+
+
+
+
+OUTPUT:
+
+1. Add Item
+2. Update Stock
+3. View Inventory
+4. Exit
+
+Enter your choice: 1
+Enter Item ID, Name, Quantity, Reorder Level:
+12345
+BAT
+60
+2
+Item added.
+
+1. Add Item
+2. Update Stock
+3. View Inventory
+4. Exit
+
+Enter your choice: 3
+Inventory:
+ID: 12345, Name: BAT, Quantity: 60, Reorder Level: 2
+
+1. Add Item
+2. Update Stock
+3. View Inventory
+4. Exit
+
+Enter your choice: 4
+Exiting.
+
+
+
+
+**************************************PROCEDURE*******************************************************************
+
+Class InventoryItem:
+
+Represents an inventory item with properties like ID, name, category, quantity, and reorder level.
+Has a display method to print item details.
+Class InventoryManagementSystem:
+
+Manages the inventory using a vector of InventoryItem objects.
+Key methods:
+addItem: Adds a new item to the inventory.
+updateStock: Updates the stock quantity of an existing item.
+viewInventory: Displays all items and alerts for low stock.
+searchItem: Searches for an item by name.
+exportInventory: Saves inventory data to a file.
+menu Method:
+
+Displays a menu with options to:
+Add Item
+Update Stock
+View Inventory
+Search Item
+Export Inventory
+Exit
+Executes the selected operation in a loop until "Exit" is chosen.
+Main Function:
+
+Creates an instance of InventoryManagementSystem.
+Starts the application by calling the menu.
